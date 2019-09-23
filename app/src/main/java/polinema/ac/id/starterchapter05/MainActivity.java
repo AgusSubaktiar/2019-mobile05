@@ -17,14 +17,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handlerStaticFragmen(View view) {
+        Intent i = new Intent( this, StaticActivity.class);
+        startActivity(i);
     }
 
     public void handlerDynamicFragmen(View view) {
     }
 
     public void handlerPratikumFragmen(View view) {
-        Intent i = new Intent( this, StaticActivity.class);
-        startActivity(i);
+
     }
 }
 
