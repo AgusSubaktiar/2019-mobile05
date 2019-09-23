@@ -1,10 +1,15 @@
 package polinema.ac.id.starterchapter05.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import polinema.ac.id.starterchapter05.R;
+import polinema.ac.id.starterchapter05.fragments.BlueFragment;
+import polinema.ac.id.starterchapter05.fragments.RedFragment;
 
 public class DynamicActivity extends AppCompatActivity {
 
@@ -12,5 +17,16 @@ public class DynamicActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dynamic);
+    }
+
+    public void handleClickLoadRedFragment(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.dynamic_fragmen_placeholder,new RedFragment());
+        fragmentTransaction.commit();
+    }
+    public void handleClickloadBluefragment(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.dynamic_fragmen_placeholder,new BlueFragment());
+        fragmentTransaction.commit();
     }
 }
