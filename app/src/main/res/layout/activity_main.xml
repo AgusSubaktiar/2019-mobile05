@@ -7,38 +7,35 @@
     tools:context=".MainActivity">
 
     <Button
-        android:layout_margin="20dp"
         android:id="@+id/btn_static_fragmen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="391dp"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
         android:onClick="handlerStaticFragmen"
         android:text="CONTOH STATIC FRAGMENT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:layout_margin="20dp"
         android:id="@+id/btn_dynamic_fragmen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="384dp"
+        android:layout_height="36dp"
+        android:layout_margin="20dp"
         android:onClick="handlerDynamicFragmen"
         android:text="CONTOH DYNAMIC FRAGMENT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_static_fragmen"
-        />
+        app:layout_constraintTop_toBottomOf="@id/btn_static_fragmen" />
 
     <Button
-        android:layout_margin="20dp"
         android:id="@+id/btn_pratikum_fragmen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="382dp"
+        android:layout_height="38dp"
+        android:layout_margin="20dp"
         android:onClick="handlerPratikumFragmen"
         android:text="CONTOH PRATIKUM FRAGMENT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_dynamic_fragmen"
-        />
+        app:layout_constraintTop_toBottomOf="@id/btn_dynamic_fragmen" />
 </androidx.constraintlayout.widget.ConstraintLayout>
